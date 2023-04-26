@@ -1,0 +1,57 @@
+{
+  "name": "vue-html-2-image",
+  "version": "0.1.0",
+  "private": true,
+  "main": "lib/html2Image.umd.min.js",
+  "keyword": "html2Image html2Canvas htmlDownloadImage html download image canvas",
+  "description": "基于html2Canvas封装的，将html转图片保存到本地",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xukexing/vue-html-2-image.git"
+  },
+  "private": false,
+  "author": "<xu996813@163.com>",
+  "license": "MIT",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name html2Image --dest lib packages/index.js"
+  },
+  "dependencies": {
+    "core-js": "^3.8.3",
+    "vue": "^2.6.14",
+    "webpack-bundle-analyzer": "^4.8.0",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "html2canvas": "^1.4.1",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
