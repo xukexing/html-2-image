@@ -1,7 +1,6 @@
 {
   "name": "vue-html-2-image",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.1",
   "main": "lib/html2Image.umd.min.js",
   "keyword": "html2Image html2Canvas htmlDownloadImage html download image canvas",
   "description": "基于html2Canvas封装的，将html转图片保存到本地",

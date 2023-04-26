@@ -86,9 +86,7 @@ const vueHtml2Image = {
         const vm = new Vue({
           // 生成vdom
           render: h => h(TriggerIcon, {
-            props: {
-              fileName: binding.value || 'chart'
-            }
+            props: binding.value || { fileName: 'chart' }
           })
         }).$mount()
 

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="html2canvas" v-html2canvas>
+    <div class="html2canvas">
       保存为图片
     </div>
   </div>

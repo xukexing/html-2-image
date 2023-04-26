@@ -39,6 +39,10 @@ export default {
         top: '4px',
         right: '4px'
       })
+    },
+    autoDownload: {
+      type: Boolean,
+      default: true
     }
   },
   data() {
@@ -48,14 +52,15 @@ export default {
   methods: {
     // 点击下载按钮触发器
     async downTrigger() {
-      console.log(this.$el, this.$el?.parentElement)
       if (!this.$el?.parentElement) return
+
       try {
         htmlToCanvas(
           this.$el?.parentElement,
           {
-            autoDownload: true,
-            fileName: this.fileName
+            autoDownload: this.autoDownload,
+            fileName: this.fileName,
+            position: this.position
           }
         )
       } catch (e) {
