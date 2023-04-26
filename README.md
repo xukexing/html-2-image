@@ -1,23 +1,23 @@
 # vue-html-2-image
 
-### Building ###
+### Install ###
 
-npm Install:
+npm:
 
     npm install vue-html-2-image --save
    
 or
 
-yarn Install:
+yarn:
 
     yarn add vue-html-2-image --save
     
-import
+### import ###
 
     import html2Image from 'vue-html-2-image'
     Vue.use(html2Image)
     
-use
+### use ###
 
     <div v-html2Image></div>
     <div v-html2Image="{ fileName: '保存的图片名称' }"></div>
